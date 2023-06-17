@@ -1,0 +1,70 @@
+$body-color: #222222;
+$background-color: #f7f6f5;
+$cu-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC,
+  Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei,
+  sans-serif;
+
+.index {
+  font-family: $cu-font-family;
+  color: $body-color;
+  margin: 0;
+  height: 100vh;
+  font-size: 16px;
+  flex-direction: column;
+
+  @media screen and (min-width: 720px) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main {
+    background: $background-color;
+    flex: 2;
+    hypens: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    text-align: left;
+    word-break: normal;
+    word-wrap: break-word;
+
+    @media screen and (min-width: 720px) {
+      padding: 40px;
+    }
+  }
+
+  .item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eaecef;
+
+    .link {
+      color: #000;
+      &:hover {
+        text-decoration: underline;
+      }
+
+      .title {
+        font-size: 1.5rem;
+      }
+    }
+
+    .info {
+      padding-bottom: 0.25rem;
+
+      .date {
+        margin-right: 0.5rem;
+        font-size: 0.8rem;
+        color: #999;
+      }
+
+      .tag {
+        margin-right: 0.5rem;
+        font-size: 0.8rem;
+        color: #999;
+      }
+    }
+
+    .excerpt {
+    }
+  }
+}
