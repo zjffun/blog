@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node ./tools/dead-links-checker.mjs",
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
@@ -17,7 +18,7 @@
     "autoprefixer": "^10.4.13",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.2",
-    "glob": "^8.1.0",
+    "glob": "^10.3.0",
     "gray-matter": "^4.0.3",
     "relation2-cli": "^0.0.14",
     "sass": "^1.57.1",

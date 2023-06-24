@@ -22,7 +22,7 @@ The Navigation Timing API provides data that can be used to measure the performa
 window.performance.timing
 ```
 
-![performance-timing](./images/performance-timing.jpg)
+![performance-timing](/blogs/images/performance-timing.jpg)
 
 -   The load event is fired when the whole page has loaded, including all dependent resources such as stylesheets and images.
 -   The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.

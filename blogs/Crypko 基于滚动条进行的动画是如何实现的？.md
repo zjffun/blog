@@ -9,7 +9,7 @@ tags:
 
 为什么这么确定就是用了 ScrollMagic ？因为她代码里写的很清楚。。
 
-![Crypko 基于滚动条进行的动画是如何实现的？](./img/CrypkoScrollAnimate.png)
+![Crypko 基于滚动条进行的动画是如何实现的？](/blogs/images/CrypkoScrollAnimate.png)
 
 一些其他资料：
 

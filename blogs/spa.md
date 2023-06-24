@@ -9,7 +9,10 @@ tags:
 
 单页应用会使用 JS 做出一套路由系统模拟网页跳转，但这样切换页面时取消未完成的请求的操作就要码农们手动完成了。（这个操作一般放在路由改变事件里。）
 
-{% details 试一试 %}
+<details>
+<summary>
+试一试
+</summary>
 
 首先搞个 HTTP 服务。
 
@@ -126,4 +129,4 @@ app.listen(3000);
 
 <img src="/blogs/images/spa/cancel-request-spa.png" alt="cancel request spa" />
 
-{% enddetails %}
+</details>

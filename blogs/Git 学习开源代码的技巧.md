@@ -15,8 +15,8 @@ date: 'Thu, 28 Feb 2019 06:35:09 GMT'
 
 ## Reset 指定版本
 
-![](./img/Git-学习开源代码的技巧-1.png)
+![](/blogs/images/Git-学习开源代码的技巧-1.png)
 
 ## 查看 HEAD 附近的提交和分支
 
-![](./img/Git-学习开源代码的技巧-2.png)
+![](/blogs/images/Git-学习开源代码的技巧-2.png)

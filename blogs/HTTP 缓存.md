@@ -61,7 +61,7 @@ Hash 算法：CRC32C 或 MD5
 
 可以按照下图设置`Cache-Control`
 
-![定义最佳的缓存机制](./img/HTTP缓存.png)
+![定义最佳的缓存机制](/blogs/images/HTTP缓存.png)
 
 # 可缓存的内容
 

@@ -71,9 +71,9 @@ while (queue.waitForMessage()) {
 
 # 帧
 
-![frame](./images/frame.png)
+![frame](/blogs/images/frame.png)
 
-![event-dispatch](./images/event-dispatch.png)
+![event-dispatch](/blogs/images/event-dispatch.png)
 
 ```html
 <script>

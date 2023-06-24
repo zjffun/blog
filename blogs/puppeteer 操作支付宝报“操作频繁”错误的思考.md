@@ -11,11 +11,11 @@ tags:
 
 转账时查询用户是否存在会报 “操作频繁”
 
-![alipay-operating-frequency](./images/alipay-operating-frequency.png)
+![alipay-operating-frequency](/blogs/images/alipay-operating-frequency.png)
 
 感觉可能检查了无头浏览器，但在 JS 里没有搜索到`webdrive`。然后通过内存快照找找发现真有`webdrive`。。（虽然不能百分百确定无头浏览器，但之后进行了一些欺骗确实有点作用）
 
-![alipay-find-webdrive-in-memory](./images/alipay-find-webdrive-in-memory.png)
+![alipay-find-webdrive-in-memory](/blogs/images/alipay-find-webdrive-in-memory.png)
 
 # 尝试解决
 
