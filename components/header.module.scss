@@ -3,6 +3,43 @@
   overflow: hidden;
   position: relative;
   text-align: center;
+  min-height: 400px;
+  padding: 1rem;
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 767px) {
+      align-items: flex-start;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+  }
+
+  .docSearch {
+    display: flex;
+    font-size: 1rem;
+    :global(.DocSearch-Button) {
+      border-radius: 0.25rem;
+      margin-left: 0;
+
+      :global(.DocSearch-Button-Keys) {
+        min-width: 40px;
+      }
+
+      :global(.DocSearch-Button-Key:nth-child(2)) {
+        margin-right: 0;
+      }
+    }
+  }
 
   .backstretch {
     position: absolute;
@@ -17,10 +54,11 @@
     opacity: 0.5;
   }
 
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 768px) {
     flex: 1;
     overflow: hidden;
     text-align: right;
+    min-height: 0;
     padding: 40px;
   }
 

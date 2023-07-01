@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
+import classnames from "classnames";
+import AlgoliaSearch from "./algolia-search";
 
 import style from "./header.module.scss";
 
 import headerImg from "./images/header.jpg";
-import { useSearchParams } from "next/navigation";
-import classnames from "classnames";
 
 const list = [
   {
@@ -26,10 +27,12 @@ const Header = () => {
 
   return (
     <header className={style.header}>
-      <nav>
-        <ul>
-          {/* TODO */}
-          {/* <li>搜索</li> */}
+      <nav className={style.nav}>
+        <ul className={style.list}>
+          <li className={style.docSearch}>
+            <div className="flex-1"></div>
+            <AlgoliaSearch></AlgoliaSearch>
+          </li>
           <li>
             <Link
               className={classnames({

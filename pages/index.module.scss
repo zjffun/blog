@@ -12,7 +12,7 @@ $cu-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC,
   font-size: 16px;
   flex-direction: column;
 
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
   }
@@ -27,7 +27,7 @@ $cu-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC,
     word-break: normal;
     word-wrap: break-word;
 
-    @media screen and (min-width: 720px) {
+    @media screen and (min-width: 768px) {
       padding: 40px;
     }
   }
