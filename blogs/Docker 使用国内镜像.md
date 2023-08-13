@@ -21,7 +21,7 @@ Preferences -> Docker Engine
 }
 ```
 
-# Ubuntu
+# Ubuntu / Debian
 
 ```bash
 sudo vim /etc/docker/daemon.json
