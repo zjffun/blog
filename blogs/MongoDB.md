@@ -1,9 +1,57 @@
 ---
-date: 'Tue, 10 Jan 2023 15:45:45 GMT'
-updated: 'Tue, 10 Jan 2023 15:45:45 GMT'
+date: "Tue, 10 Jan 2023 15:45:45 GMT"
+updated: 2023-09-16 16:35:02 +08:00
 tags:
   - 数据库
 ---
+
+# [Debian Install](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-debian/)
+
+```sh
+sudo apt-get install gnupg curl
+curl -fsSL https://pgp.mongodb.com/server-7.0.asc | \
+   sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
+   --dearmor
+echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] http://repo.mongodb.org/apt/debian bullseye/mongodb-org/7.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+```
+
+# Client
+
+```sh
+mongosh mongodb://xxx
+```
+
+```mongosh
+# get help
+help
+
+# show databases
+show dbs
+
+# use database
+use xxxDb
+
+# show database functions
+db.help()
+
+# show collection functions
+db.xxxCollection.help()
+
+# count collection documents
+db.xxxCollection.count()
+```
+
+# [Backup and Restore](https://www.mongodb.com/docs/manual/tutorial/backup-and-restore-tools/)
+
+```sh
+mongodump --uri "mongodb://xxx" --db xxx
+```
+
+```sh
+mongorestore --uri "mongodb://xxx" ./
+```
 
 # [Create the user administrator](https://www.mongodb.com/docs/manual/tutorial/configure-scram-client-authentication/#create-the-user-administrator)
 
