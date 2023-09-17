@@ -1,8 +1,21 @@
 {
+	"meta": {
+		"prefix": "meta",
+		"description": "meta",
+		"scope": "markdown",
+		"body": [
+			"---",
+			"title: ",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_TIMEZONE_OFFSET",
+			"tags:",
+			"  - ",
+			"---"
+		]
+	},
 	"time": {
 		"prefix": "time",
 		"description": "time",
-		"scope": "",
+		"scope": "markdown",
 		"body": [
 			"$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $CURRENT_TIMEZONE_OFFSET"
 		]
