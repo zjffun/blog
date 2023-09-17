@@ -8,8 +8,8 @@ tags:
 
 ```bash
 # Docker dev
-alias ddev "docker-compose -f docker-compose.dev.yml up --build"
+alias ddev="docker-compose -f docker-compose.dev.yml up --build"
 
 # Fix lockfile registry
-alias fr "npx replace-lockfile-registry --registry https://registry.npmjs.org/"
+alias fr="npx replace-lockfile-registry --registry https://registry.npmjs.org/"
 ```
