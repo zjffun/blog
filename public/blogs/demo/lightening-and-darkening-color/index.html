@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lightening-and-darkening-color</title>
+    <style>
+      .base {
+        color: var(--base-color);
+      }
+      .light {
+        color: oklch(from var(--base-color) calc(l - 25) c h);
+        background: oklch(from var(--base-color) calc(l + 25) c h);
+      }
+      .dark {
+        color: oklch(from var(--base-color) calc(l + 25) c h);
+        background: oklch(from var(--base-color) calc(l - 25) c h);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      Base
+      <input id="color-input" type="color" value="#0696c6" />
+    </h2>
+    <div class="base">
+      <p>color: --base-color</p>
+    </div>
+    <h2>light</h2>
+    <div class="light">
+      <p>color: oklch(from var(--base-color) calc(l - 25) c h)</p>
+      <p>background: oklch(from var(--base-color) calc(l + 25) c h)</p>
+    </div>
+    <h2>dark</h2>
+    <div class="dark">
+      <p>color: oklch(from var(--base-color) calc(l + 25) c h)</p>
+      <p>background: oklch(from var(--base-color) calc(l - 25) c h)</p>
+    </div>
+  </body>
+  <script>
+    function setBaseColor(color) {
+      document.body.style.setProperty("--base-color", color);
+    }
+
+    const colorInput = document.getElementById("color-input");
+    colorInput.addEventListener("input", (e) => {
+      setBaseColor(e.target.value);
+    });
+
+    setBaseColor(colorInput.value);
+  </script>
+</html>
