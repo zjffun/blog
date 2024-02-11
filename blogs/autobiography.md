@@ -82,3 +82,11 @@ tags:
 # 北京 － 漂泊
 
 # 武汉
+
+# Timeline
+
+- Work: 2019 - now
+- College: 2015 2016 2017 2018
+- High school: 2012 2013 2014
+- Middle school: 2009 2010 2011
+- Primary school: 2003 2004 2005 2006 2007 2008
