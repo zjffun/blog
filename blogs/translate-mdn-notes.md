@@ -2,7 +2,7 @@
 title: Translate MDN to zh-CN notes
 date: 2024-02-11 12:17:19 +08:00
 tags:
-  - translate
+  - Translate
 ---
 
 - Read [MDN zh-CN Translation Guide](https://github.com/mdn/translated-content/blob/main/docs/zh-cn/translation-guide.md)
