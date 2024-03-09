@@ -48,20 +48,25 @@
     .Layout {
       --Layout-sidebar-width: 220px;
       --Layout-gutter: 16px;
-      display: flex;
+      display: grid;
+      grid-template-columns:
+        minmax(
+          0,
+          calc(100% - var(--Layout-sidebar-width) - var(--Layout-gutter))
+        )
+        auto;
       gap: var(--Layout-gutter);
     }
 
     .Layout-main {
-      flex: 1;
+      grid-column: 1;
       & > *:first-child {
         margin-top: 0;
       }
     }
 
     .Layout-sidebar {
-      flex: 0 0 var(--Layout-sidebar-width);
-      width: var(--Layout-sidebar-width);
+      grid-column: 2;
 
       ul,
       ol {
@@ -79,8 +84,19 @@
     }
 
     @media screen and (max-width: 767px) {
+      .Layout {
+        // 1fr will make inner table spread width
+        grid-template-columns: 100%;
+        grid-auto-flow: row;
+      }
+
+      .Layout-main {
+        grid-row: 1;
+      }
+
       .Layout-sidebar {
-        display: none;
+        grid-column: 1;
+        grid-row: 2;
       }
     }
 

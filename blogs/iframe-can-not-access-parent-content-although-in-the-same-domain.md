@@ -25,10 +25,10 @@ Below is some test case, we can try those examples in Firefox:
 
 | parent set `blog.zjffun.com` | parent set `zjffun.com` | iframe set `blog.zjffun.com` | iframe set  `zjffun.com` | accessible |
 | --- | --- | --- | --- | --- |
-| ❌ | ❌ | ❌ | ❌ | ✅  <a href="https://blog.zjffun.com/blogs/demo/ iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html" target="_blank">example</a> |
-| ✅ | ❌ | ✅ | ❌ | ✅ <a href="https://blog.zjffun.com/blogs/demo/ iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?set-parent-domain-1=true&set-iframe-domain-1=true" target="_blank">example</a> |
-| ❌ | ✅ | ❌ | ✅ | ✅ <a href="https://blog.zjffun.com/blogs/demo/ iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?set-parent-domain-2=true&set-iframe-domain-2=true" target="_blank">example</a> |
-| ✅ | ✅ | ❌ | ✅ | ✅ <a href="https://blog.zjffun.com/blogs/demo/ iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?set-parent-domain-1=true&set-parent-domain-2=true&set-iframe-domain-2=true" target="_blank">example</a> |
-| ✅ | ❌ | ❌ | ❌ | ❌ <a href="https://blog.zjffun.com/blogs/demo/ iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?set-parent-domain-1=true" target="_blank">example</a> |
-| ❌ | ❌ | ✅ | ❌ | ❌ <a href="https://blog.zjffun.com/blogs/demo/ iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?&set-iframe-domain-1=true" target="_blank">example</a> |
-| ❌ | ❌ | ❌ | ✅ | ❌ <a href="https://blog.zjffun.com/blogs/demo/ iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?&set-iframe-domain-2=true" target="_blank">example</a> |
+| ❌ | ❌ | ❌ | ❌ | ✅  <a href="https://blog.zjffun.com/blogs/demo/iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html" target="_blank">example</a> |
+| ✅ | ❌ | ✅ | ❌ | ✅ <a href="https://blog.zjffun.com/blogs/demo/iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?set-parent-domain-1=true&set-iframe-domain-1=true" target="_blank">example</a> |
+| ❌ | ✅ | ❌ | ✅ | ✅ <a href="https://blog.zjffun.com/blogs/demo/iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?set-parent-domain-2=true&set-iframe-domain-2=true" target="_blank">example</a> |
+| ✅ | ✅ | ❌ | ✅ | ✅ <a href="https://blog.zjffun.com/blogs/demo/iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?set-parent-domain-1=true&set-parent-domain-2=true&set-iframe-domain-2=true" target="_blank">example</a> |
+| ✅ | ❌ | ❌ | ❌ | ❌ <a href="https://blog.zjffun.com/blogs/demo/iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?set-parent-domain-1=true" target="_blank">example</a> |
+| ❌ | ❌ | ✅ | ❌ | ❌ <a href="https://blog.zjffun.com/blogs/demo/iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?&set-iframe-domain-1=true" target="_blank">example</a> |
+| ❌ | ❌ | ❌ | ✅ | ❌ <a href="https://blog.zjffun.com/blogs/demo/iframe-can-not-access-parent-content-although-in-the-same-domain/parent.html?&set-iframe-domain-2=true" target="_blank">example</a> |

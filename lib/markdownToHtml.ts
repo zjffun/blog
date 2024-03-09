@@ -3,6 +3,7 @@ import rehypeStarryNight from "@microflash/rehype-starry-night";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeSlug from "rehype-slug";
 import rehypeStringify from "rehype-stringify";
+import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import { Root } from "remark-parse/lib";
 import remarkRehype from "remark-rehype";
@@ -12,6 +13,7 @@ import { Node } from "unist";
 export default async function markdownToHtml(markdown: string) {
   const result = await unified()
     .use(remarkParse)
+    .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeSlug)
     .use(rehypeAutolinkHeadings)
