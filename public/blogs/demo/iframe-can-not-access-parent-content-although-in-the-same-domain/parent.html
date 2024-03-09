@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Origin-Agent-Cluster" content="?0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <iframe id="test-iframe" width="100%" height="300px"></iframe>
+
+    <script>
+      window.testParentVar = "testParentVar";
+      const searchParam = new URLSearchParams(window.location.search);
+
+      if (searchParam.get("set-parent-domain-1") === "true") {
+        const domain = location.hostname;
+        console.log("set-parent-domain", domain);
+        document.domain = domain;
+      }
+
+      if (searchParam.get("set-parent-domain-2") === "true") {
+        const domain = location.hostname.split(".").slice(-2).join(".");
+        console.log("set-parent-domain", domain);
+        document.domain = domain;
+      }
+
+      let iframeUrl = new URL("iframe.html", window.location.href);
+      iframeUrl.search = window.location.search;
+      document.getElementById("test-iframe").src = iframeUrl;
+    </script>
+  </body>
+</html>

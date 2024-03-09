@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="result"></div>
+
+    <script>
+      window.testParentVar = "testParentVar";
+      const searchParam = new URLSearchParams(window.location.search);
+
+      if (searchParam.get("set-iframe-domain-1") === "true") {
+        const domain = location.hostname;
+        console.log("set-iframe-domain", domain);
+        document.domain = domain;
+      }
+
+      if (searchParam.get("set-iframe-domain-2") === "true") {
+        const domain = location.hostname.split(".").slice(-2).join(".");
+        console.log("set-iframe-domain", domain);
+        document.domain = domain;
+      }
+
+      const resultEL = document.getElementById("result");
+
+      let result = "";
+      try {
+        result = `Access parent var success: ${window.parent.testParentVar}`;
+      } catch (error) {
+        result = `Failed to access parent var: ${error.toString()}`;
+      }
+
+      console.log(result);
+      resultEL.innerText = result;
+    </script>
+  </body>
+</html>

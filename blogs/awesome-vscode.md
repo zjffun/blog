@@ -1,9 +1,19 @@
 ---
 title: Awesome VS Code
 date: 2023-8-13
+updated: 2024-03-09 14:05:53 +08:00
 tags:
   - VS Code
 ---
+
+# Jump to CSS/SCSS/LESS definition
+
+[CSS Navigation - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=pucelle.vscode-css-navigation)
+
+Currently:
+
+- CSS Peek: not support vue and has some bugs about SCSS/LESS.
+- Volar: not support SCSS/LESS.
 
 # Copy relative path and line numbers
 
