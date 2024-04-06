@@ -21,7 +21,7 @@ Unzip:
 
 # Image
 
-# ImageMagick
+## ImageMagick
 
 Batch convert `jpg` to `webp`:
 
@@ -29,9 +29,13 @@ Batch convert `jpg` to `webp`:
 magick mogrify -format webp *.jpg
 ```
 
-# [TinyPNG](https://tinypng.com/)
+## [TinyPNG](https://tinypng.com/)
 
 Compress WebP, PNG and JPEG images intelligently
+
+## SVG online editor
+
+- [SVGator](https://app.svgator.com/auth/login#/)
 
 # Download
 
