@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 1rem;
+	min-height: 100vh;
+        border: 1px solid gray;
+      }
+
+      .imgContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .imgContainer img {
+        object-fit: contain;
+        width: 130px;
+        height: 130px;
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    Press <code>ctrl+v</code> or <code>cmd+v</code> to paste image from
+    clipboard here.
+    <p>Image File:</p>
+    <div id="imgFileContainer" class="imgContainer"></div>
+    <p>Image Data:</p>
+    <div id="imgDataContainer" class="imgContainer"></div>
+    <script>
+      document.addEventListener("paste", async (e) => {
+        // read e.clipboardData.files must before navigator.clipboard.read()
+        for (const file of e.clipboardData.files) {
+          const img = document.createElement("img");
+          img.src = URL.createObjectURL(file);
+          imgFileContainer.append(img);
+        }
+
+        const clipboardItems = await navigator.clipboard.read();
+
+        for (const clipboardItem of clipboardItems) {
+          const imageTypes = clipboardItem.types?.filter((type) =>
+            type.startsWith("image/")
+          );
+
+          for (const imageType of imageTypes) {
+            const blob = await clipboardItem.getType(imageType);
+            const img = document.createElement("img");
+            img.src = URL.createObjectURL(blob);
+            imgDataContainer.append(img);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
