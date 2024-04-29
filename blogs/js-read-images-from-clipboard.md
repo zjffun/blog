@@ -1,5 +1,5 @@
 ---
-title: JS Read Image From Clipboard
+title: JS Read Images From Clipboard
 date: 2024-04-29 23:15:58 +08:00
 tags:
   - JavaScript
@@ -11,7 +11,7 @@ tags:
 
 Example:
 
-<iframe width="100%" height="350px" style="margin-bottom: 1rem;" src="/blogs/demo/js-read-image-from-clipboard/index.html"></iframe>
+<iframe width="100%" height="350px" style="margin-bottom: 1rem;" src="/blogs/demo/js-read-images-from-clipboard/index.html"></iframe>
 
 I found that read `e.clipboardData.files` must before `navigator.clipboard.read()`, otherwise the `e.clipboardData.files` will be empty.
 
