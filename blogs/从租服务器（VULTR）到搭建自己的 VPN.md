@@ -1,6 +1,6 @@
 ---
-updated: 'Sat, 24 Dec 2022 13:48:59 GMT'
-date: 'Tue, 29 Jan 2019 13:32:13 GMT'
+updated: "Sat, 24 Dec 2022 13:48:59 GMT"
+date: "Tue, 29 Jan 2019 13:32:13 GMT"
 ---
 
 # 写在前面的话
@@ -30,9 +30,9 @@ date: 'Tue, 29 Jan 2019 13:32:13 GMT'
 
 最好选择以下版本的服务器（下面搭建 VPN 的脚本在以下服务器上测试过）：
 
--   Ubuntu 18.04/16.04/14.04
--   Debian 9/8
--   CentOS 7/6
+- Ubuntu 18.04/16.04/14.04
+- Debian 9/8
+- CentOS 7/6
 
 ## 4. 测试
 
@@ -99,6 +99,14 @@ Setup VPN clients: https://git.io/vpnclients
 
 会的，因为有加密开销，数据使用量增加约 10%。越强的加密加密开销越大。
 
+## Android 使用
+
+> Android 12+ 仅支持 IKEv2 模式
+
+> 如果你仍然想用 IPsec/XAuth 模式连接，你必须首先编辑 VPN 服务器上的 `/etc/ipsec.conf` 并在 `ike=...` 一行的末尾加上 `,aes256-sha2;modp1024,aes128-sha1;modp1024` 字样。保存文件并运行 `service ipsec restart`。
+
+See: [setup-ipsec-vpn IPsec/XAuth 模式](https://github.com/hwdsl2/setup-ipsec-vpn/blob/master/docs/clients-xauth-zh.md#android)
+
 # 参考
 
-> -   [Does VPN Use More Data than Conventional Usage? - The VPN Guru](https://thevpn.guru/does-vpn-use-more-data-than-normal/)
+> - [Does VPN Use More Data than Conventional Usage? - The VPN Guru](https://thevpn.guru/does-vpn-use-more-data-than-normal/)
