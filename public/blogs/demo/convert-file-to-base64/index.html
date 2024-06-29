@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert File To Base64</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+
+      .base64-textarea {
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .error {
+        color: hotpink;
+      }
+
+      .dropzone {
+        padding: 8px;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropzone">
+      <div style="margin-bottom: 8px">
+        Choose, drop or paste files here to convert to Base64.
+      </div>
+
+      <input type="file" class="fileInput" multiple />
+
+      <ul class="list"></ul>
+    </div>
+  </body>
+
+  <script>
+    function getBase64(file) {
+      return new Promise((res, rej) => {
+        var reader = new FileReader();
+        reader.onloadend = function () {
+          res(reader.result);
+        };
+        reader.onerror = function (e) {
+          rej(e);
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+
+    async function appendResult(file) {
+      const listItem = document.createElement("li");
+
+      const list = document.querySelector(".list");
+
+      try {
+        const base64 = await getBase64(file);
+        const fileNameDiv = document.createElement("div");
+        fileNameDiv.innerText = file.name;
+        const base64Textarea = document.createElement("textarea");
+        base64Textarea.classList.add("base64-textarea");
+        base64Textarea.setAttribute("rows", "5");
+        base64Textarea.innerText = base64;
+        listItem.append(fileNameDiv, base64Textarea);
+      } catch (error) {
+        console.error(error);
+        const errorDiv = document.createElement("div");
+        errorDiv.classList.add("error");
+        errorDiv.innerText = error?.message || "unknown error";
+        listItem.append(errorDiv);
+      }
+
+      list.append(listItem);
+    }
+
+    document
+      .querySelector(".fileInput")
+      .addEventListener("change", function (ev) {
+        const files = ev?.target?.files || [];
+        for (const file of files) {
+          appendResult(file);
+        }
+      });
+
+    document.addEventListener("paste", async function (ev) {
+      // read e.clipboardData.files must before navigator.clipboard.read()
+      for (const file of ev.clipboardData.files) {
+        appendResult(file);
+      }
+
+      const clipboardItems = await navigator.clipboard.read();
+
+      for (const clipboardItem of clipboardItems) {
+        const types = clipboardItem.types || [];
+
+        for (const type of types) {
+          const blob = await clipboardItem.getType(type);
+          const file = new File([blob], "clipboard", { type });
+          appendResult(file);
+        }
+      }
+    });
+
+    document
+      .querySelector(".dropzone")
+      .addEventListener("dragover", function (ev) {
+        // Prevent default behavior (Prevent file from being opened)
+        ev.preventDefault();
+      });
+
+    document.querySelector(".dropzone").addEventListener("drop", function (ev) {
+      // Prevent default behavior (Prevent file from being opened)
+      ev.preventDefault();
+
+      if (ev.dataTransfer.items) {
+        // Use DataTransferItemList interface to access the file(s)
+        [...ev.dataTransfer.items].forEach((item, i) => {
+          // If dropped items aren't files, reject them
+          if (item.kind === "file") {
+            const file = item.getAsFile();
+            appendResult(file);
+          }
+        });
+      } else {
+        // Use DataTransfer interface to access the file(s)
+        [...ev.dataTransfer.files].forEach((file, i) => {
+          appendResult(file);
+        });
+      }
+    });
+  </script>
+</html>
