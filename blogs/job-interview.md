@@ -10,6 +10,8 @@ updated: 2024-06-30 21:16:09 +08:00
 
 准备：自我介绍和项目经验。简历里出现的内容要做好准备能描述清楚。
 
+自我介绍：开发经验 X 年，目前就职于 X 公司，做 X 事。擅长 X，熟悉 X，了解 X。业余时间做 X 事。
+
 项目经验：STAR (situation, task, action and result)
 
 XX 是服务于 XX 的系统。我负责开发 XX 功能。我使用 XX 进行开发。一共开发了 X 个功能。提高了 XX。节省了 XX。
@@ -137,6 +139,17 @@ XX 是服务于 XX 的系统。我负责开发 XX 功能。我使用 XX 进行�
 - 提问：10min
 
 算法几乎没有时间去推倒重写，所以需要一开始思路就清晰。不要紧张，先想好边界条件的判断再写代码。
+
+### Front end
+
+Q: CSS make a box with fixed width-to-height ratio\
+A: [aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)
+
+Q: Different between process and thread\
+A: 进程（Process）：给程序独立使用 CPU、主存、I/O 设备的假象。任何时刻操作系统只有一个进程在运行，进程会交错执行（并发运行）。线程（Thread）：一个进程可以包含多个线程。
+
+Q: Garbage collection\
+A: Using mark-and-sweep algorithm. This algorithm reduces the definition of "an object is no longer needed" to "an object is unreachable". No modern JavaScript engine uses reference-counting for garbage collection anymore. [Memory management - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_management)
 
 # 参考资料
 

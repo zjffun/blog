@@ -1,9 +1,11 @@
 ---
-updated: 'Tue, 23 Apr 2019 11:10:38 GMT'
-date: 'Thu, 28 Feb 2019 06:35:09 GMT'
+updated: "Tue, 23 Apr 2019 11:10:38 GMT"
+date: "Thu, 28 Feb 2019 06:35:09 GMT"
 tags:
   - 前端
 ---
+
+Important for front end: 101, 200, 301, 304, 400, 404, 500
 
 # 1xx Informational（信息）
 
