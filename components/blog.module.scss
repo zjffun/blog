@@ -65,6 +65,7 @@
 
     .Layout-sidebar {
       grid-column: 2;
+      max-width: var(--Layout-sidebar-width);
 
       ul,
       ol {
@@ -95,6 +96,7 @@
       .Layout-sidebar {
         grid-column: 1;
         grid-row: 2;
+        max-width: 100%;
       }
     }
 
