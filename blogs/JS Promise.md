@@ -1,12 +1,33 @@
 ---
-date: 'Sat, 14 May 2022 15:20:51 GMT'
-updated: 'Sat, 14 May 2022 15:21:15 GMT'
+date: "Sat, 14 May 2022 15:20:51 GMT"
+updated: "Sat, 14 May 2022 15:21:15 GMT"
 tags:
   - 前端
   - JavaScript
 ---
 
 [simple promise implement](https://github.com/zjffun/test/tree/master/js-t/promise-t)
+
+# Promise chaining cycle
+
+```js
+const a = new Promise((res) => {
+  setTimeout(() => res(a), 0);
+});
+
+a.then(a);
+
+// Promise <rejected>: TypeError: Chaining cycle detected for promise #<Promise>
+```
+
+Those are not cycle.
+
+```js
+const a = Promise.resolve();
+const b = a.then(a);
+const c = b.then(b);
+c.then(b);
+```
 
 # `promise.then` 的回调为什么要放到微任务队列？
 

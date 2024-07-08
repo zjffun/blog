@@ -77,7 +77,7 @@ Hash 算法：CRC32C 或 MD5
 
 # 前端实现禁用缓存
 
-## 方法一：文件加上版本号 `/hash`
+## 方法一：文件加上版本号 `/hash`（推荐）
 
 使用打包工具实现。
 
@@ -89,7 +89,7 @@ Hash 算法：CRC32C 或 MD5
 <meta http-equiv="Expires" content="-1">
 ```
 
-## 方法三：请求 script 时加上随机字符串
+## 方法三：请求 script 时加上随机字符串（不推荐）
 
 ```
 <script>document.write('<script src="build/js/script.min.js?' + Math.rendom() + '">\x3C/script>')</script>
