@@ -1,8 +1,6 @@
 ---
 date: 'Sat, 14 May 2022 15:16:17 GMT'
 updated: 'Sat, 14 May 2022 15:21:15 GMT'
-tags:
-  - 前端
 ---
 
 1.  click `F2` open the devtool
