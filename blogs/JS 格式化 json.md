@@ -8,7 +8,7 @@ tags:
 
 # 一 使用原生 JSON.stringify 实现
 
-```
+```html
 <textarea name="" id="myTA" cols="30" rows="10"></textarea>
 <script>
     var myTA = document.getElementById("myTA");

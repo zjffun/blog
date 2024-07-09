@@ -11,7 +11,7 @@ tags:
 
 使用 8.0 的 MySQL Command Line Client 执行：
 
-```
+```sql
 # 修改密码验证类型
 ALTER USER '用户名'@'主机（全部主机为%）' IDENTIFIED WITH mysql_native_password BY '密码';
 

@@ -400,7 +400,7 @@ BGP 会根据进过的 AS（自治系统：Autonomous System）的个数进行�
 - URL：用于标识互联网资源。
 - HTTP：超文本传输协议
 
-![http-main-command](./images/http-main-command.png)
+![http-main-command](/blogs/images/http-main-command.png)
 
 - CGI：Common Gateway Interface，Web 服务器调用外部程序时使用的一种服务端应用规范。（一般 Web 通信返回静态信息，CGI 用来返回动态信息）
 - SNMP：网络管理。
@@ -424,7 +424,7 @@ BGP 会根据进过的 AS（自治系统：Autonomous System）的个数进行�
 - 对称加密：加密和解密用相同的密钥，挑战是传递安全密钥。使用 AES、DES 等加密算法。
 - 非对称加密：加密和解密用不同的密钥，加密和解密花费时间长。使用 RSA、DH、椭圆曲线等加密算法。
 
-![encryption-techniques](./images/encryption-techniques.png)
+![encryption-techniques](/blogs/images/encryption-techniques.png)
 
 ## 安全协议
 
@@ -440,7 +440,7 @@ IPsec 指在 IP 首部后追加 ESP 和 AH，从而对此后的数据加密。
 - HTTPS：使用 TSL/SSL 的通信。
 - 确认公钥是否正确主要使用认证中心（CA）签发的证书，主要认证中心的信息已经嵌入到浏览器的出场设置中。
 
-![https-communication](./images/https-communication.png)
+![https-communication](/blogs/images/https-communication.png)
 
 ### IEEE802.1X
 

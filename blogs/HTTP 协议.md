@@ -11,7 +11,7 @@ tags:
 
 请求数据的第一行，用来说明当前请求的最基本信息。
 
-```
+```text
 GET /index.php?p=back HTTP/1.1CRLF
 ```
 
@@ -65,7 +65,7 @@ POST 数据。如果方式为 POST，则需要请求主体部分（GET 没有请
 
 响应数据的第一行，响应结果的概述
 
-```
+```text
 http/1.1 302 FoundCRLF
 ```
 

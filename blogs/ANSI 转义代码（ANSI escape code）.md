@@ -7,7 +7,7 @@ date: 'Thu, 28 Feb 2019 06:35:09 GMT'
 
 linux 输出绿色的✓TRUE，红色的✗FALSE ：
 
-```
+```bash
 echo -e "\x1B[1;32m✓TRUE \x1B[0mXXX"
 echo -e "\x1B[1;31m✗FALSE \x1B[0mOOO"
 ```

@@ -16,7 +16,7 @@ tags:
 
 ## 获取目录内容
 
-```
+```php
 <?php
 $path = './';
 //打开文件夹
@@ -32,7 +32,7 @@ closedir($dir_handle);
 
 ## 递归获取目录内容
 
-```
+```php
 <?php
 $path = './';
 
@@ -230,7 +230,7 @@ if ($_FILES) {
 
 当操作的文件过大时不能一次性操作全部文件内容这个函数不适用！
 
-```
+```php
 <?php
 $file = './test.txt';
 $content = date('H:i:s').'\n';

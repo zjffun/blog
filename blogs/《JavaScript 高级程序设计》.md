@@ -20,7 +20,7 @@ date: "Thu, 14 Feb 2019 05:44:53 GMT"
 
 <!---->
 
-```
+```js
 function func(para1, para2){
   console.log('修改前', arguments , para1, para2);
   arguments [0] = 'arguements_0';
@@ -47,7 +47,7 @@ func('para1')
 
 基本类型的值无法添加属性（尽管这样不会报错），eg：
 
-```
+```js
 var name = "zhang";
 name.age = 17;
 console.log(name.age);// undefined
@@ -63,7 +63,7 @@ console.log(name.age);// undefined
 
 eg：这里的 obj 形参是创建了一个指针让他与 person 指针指向同一个地址，obj 和 person 都指向同一个地址，但改变 obj 的指向 person 不改变
 
-```
+```js
 function setName(obj) {
     obj.name = "Nicholas";
     obj = new Object();
@@ -78,7 +78,7 @@ alert(person.name); //"Nicholas"
 
 > 使用 var 声明的变量会自动被添加到最接近的环境中。在函数内部，最接近的环境就是函数的局部环境；在 with 语句中，最接近的环境是函数环境。如果初始化变量时没有使用 var 声明，该变量会自动被添加到全局环境。
 
-```
+```js
 // 1.if
 if (true) {
     var color = "blue";
@@ -548,7 +548,7 @@ BOM 的核心是 window 对象，它表示浏览器的一个实例，同时也�
 
 > 一般认为，使用超时调用来模拟间歇调用是一种最佳模式。在开发环境下，很少使用真正的间歇调用，原因是后一个间歇调用可能会在前一个间歇调用结束之前启动。而像下面示例中那样使用超时调用，则完全可以避免这一点。所以，最好不要使用间歇调用。
 
-```
+```js
 // 超时调用模拟间歇调用
 var num = 0;
 var max = 10;
@@ -809,7 +809,7 @@ while (child != document.body.lastChild) {
 
 实践中，最好始终指定度量单位（标准模式下所有的度量值必须指定单位，混杂模式下可以不指定单位）。
 
-```
+```html
 <div id="myDiv">myDiv</div>
 <script>
     var myDiv = document.getElementById("myDiv");
@@ -1472,7 +1472,7 @@ eg：非致命错误添加 try-catch 可以使非致命错误发生后后续代�
 
 > 建立这样一种 JavaScript 错误记录系统，首先需要在服务器上创建一个页面（或者一个服务器入口点），用于处理错误数据。这个页面的作用无非就是从查询字符串中取得数据，然后再将数据写入错误日志中。这个页面可能会使用如下所示的函数：
 
-```
+```js
 function logError(sev, msg){
     var img = new Image();
     img.src = "log.php?sev=" + encodeURIComponent(sev) + "&msg=" + encodeURIComponent(msg);

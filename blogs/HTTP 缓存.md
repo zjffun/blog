@@ -1,6 +1,6 @@
 ---
-updated: 'Sat, 14 May 2022 15:21:15 GMT'
-date: 'Wed, 28 Nov 2018 14:57:38 GMT'
+updated: "Sat, 14 May 2022 15:21:15 GMT"
+date: "Wed, 28 Nov 2018 14:57:38 GMT"
 tags:
   - 前端
 ---
@@ -11,12 +11,12 @@ tags:
 
 ## 请求阶段
 
--   该资源是否有缓存？
-    -   有缓存：
-        -   该资源 `Cache-Control`或`Expires` 是否过期？
-            -   未过期：直接使用缓存的资源。
-            -   已过期：携带该资源的 `ETag` + `If-None-Match` 或 `Last-Modified` + `If-Modified-Since` 请求该资源。
-    -   没有缓存：直接请求该资源。
+- 该资源是否有缓存？
+  - 有缓存：
+    - 该资源 `Cache-Control`或`Expires` 是否过期？
+      - 未过期：直接使用缓存的资源。
+      - 已过期：携带该资源的 `ETag` + `If-None-Match` 或 `Last-Modified` + `If-Modified-Since` 请求该资源。
+  - 没有缓存：直接请求该资源。
 
 ## 响应阶段
 
@@ -34,6 +34,9 @@ PS：在控制台查看缓存效果时注意关闭`禁用 HTTP 缓存`选项
 规定资源有效期。
 
 > Cache-Control 标头是在 HTTP/1.1 规范中定义的，取代了之前用来定义响应缓存策略的标头（例如 Expires）。所有现代浏览器都支持 Cache-Control，因此，使用它就够了。
+
+- Request: max-age, no-cache, no-store, only-if-cached, etc.
+- Response: max-age, no-cache, no-store, private, public, etc.
 
 ## Expires
 
@@ -69,11 +72,11 @@ Hash 算法：CRC32C 或 MD5
 >
 > 普遍的缓存案例:
 >
-> -   一个检索请求的成功响应：对于 GET 请求，响应状态码为：200，则表示为成功。一个包含例如 HTML 文档，图片，或者文件的响应。
-> -   永久重定向：响应状态码：301。
-> -   错误响应：响应状态码：404 的一个页面。
-> -   不完全的响应：响应状态码 206，只返回局部的信息。
-> -   除了 GET 请求外，如果匹配到作为一个已被定义的 cache 键名的响应。
+> - 一个检索请求的成功响应：对于 GET 请求，响应状态码为：200，则表示为成功。一个包含例如 HTML 文档，图片，或者文件的响应。
+> - 永久重定向：响应状态码：301。
+> - 错误响应：响应状态码：404 的一个页面。
+> - 不完全的响应：响应状态码 206，只返回局部的信息。
+> - 除了 GET 请求外，如果匹配到作为一个已被定义的 cache 键名的响应。
 
 # 前端实现禁用缓存
 
@@ -83,7 +86,7 @@ Hash 算法：CRC32C 或 MD5
 
 ## 方法二：告诉浏览器不要缓存（不一定好使）
 
-```
+```html
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta http-equiv="Expires" content="-1">
@@ -91,13 +94,13 @@ Hash 算法：CRC32C 或 MD5
 
 ## 方法三：请求 script 时加上随机字符串（不推荐）
 
-```
+```html
 <script>document.write('<script src="build/js/script.min.js?' + Math.rendom() + '">\x3C/script>')</script>
 ```
 
 或者
 
-```
+```js
 var s = document.createElement('script');
 s.setAttribute('src', '<script src="build/js/script.min.js?' + Math.rendom());
 s.setAttribute('type', 'text/javascript');
@@ -106,7 +109,7 @@ document.getElementsByTagName('head')[0].appendChild(s);
 
 # 参考
 
--   [【Web 缓存机制系列】2 – Web 浏览器的缓存机制 | AlloyTeam](http://www.alloyteam.com/2012/03/web-cache-2-browser-cache/#prettyPhoto)
--   [HTTP 缓存 | Web | Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
--   [HTTP 缓存 - HTTP | MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Caching_FAQ)
--   [Hashes and ETags: best practices  |  Cloud Storage  |  Google Cloud](https://cloud.google.com/storage/docs/hashes-etags)
+- [【Web 缓存机制系列】2 – Web 浏览器的缓存机制 | AlloyTeam](http://www.alloyteam.com/2012/03/web-cache-2-browser-cache/#prettyPhoto)
+- [HTTP 缓存 | Web | Google Developers](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching)
+- [HTTP 缓存 - HTTP | MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Caching_FAQ)
+- [Hashes and ETags: best practices  |  Cloud Storage  |  Google Cloud](https://cloud.google.com/storage/docs/hashes-etags)

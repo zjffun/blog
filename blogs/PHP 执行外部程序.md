@@ -14,7 +14,7 @@ exec — 执行一个外部程序（在 php 文件所在目录进行执行）
 用到执行外部程序的就这一句：
 `exec("mysql -u$username -p$password $database < $backup_path$backup_name");`
 
-```
+```php
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 

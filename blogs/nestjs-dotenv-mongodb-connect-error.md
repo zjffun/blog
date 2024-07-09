@@ -34,7 +34,7 @@ bootstrap();
 
 错误信息示例：
 
-```
+```text
 ERROR [ExceptionHandler] The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
 MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
 ```

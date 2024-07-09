@@ -31,7 +31,7 @@ date: 'Fri, 04 May 2018 00:55:33 GMT'
 
 3.  复制，粘贴如下代码，修改 Mywidth 和 Myheigth 为图片宽高
 
-    ```
+    ```text
     Sub Macro()
     　　Mywidth=200 '图片宽度
     　　Myheigth=200 '图片高度
@@ -46,7 +46,7 @@ date: 'Fri, 04 May 2018 00:55:33 GMT'
 
 ## 批量居中
 
-```
+```text
 Sub ImageCenter()
     For Each iShape In ActiveDocument.InlineShapes
         iShape.Range.Paragraphs.Alignment = wdAlignParagraphCenter
@@ -60,7 +60,7 @@ End Sub
 
 （推荐）添加 tableBody，tableHead 样式，给表头和表内容添加样式
 
-```
+```text
 Sub setTableStyle()
     For Each aTable In ActiveDocument.Tables
 
@@ -82,7 +82,7 @@ End Sub
 
 （不推荐）加粗表格第一行，直接修改样式
 
-```
+```text
 Sub BoldTablesFristRow()
     For Each aTable In ActiveDocument.Tables
         aTable.Cell(1, 1).Select
@@ -98,7 +98,7 @@ End Sub
 
 （不推荐）加粗表格第一行，直接修改样式，会报错误：无法访问此集合中单独的行，因为表格有纵向合并的单元格。
 
-```
+```text
 Sub BoldTablesFristRow()
     For Each aTable In ActiveDocument.Tables
         For Each aCell In aTable.Rows.First.Cells
@@ -114,7 +114,7 @@ End Sub
 
 要先在 vba 的菜单上工具 - 引用 - 添加 Microsoft VBScript Regular Express 这个引用才能用
 
-```
+```text
 Sub add_caption()
     Dim title As String
     '正则
@@ -137,7 +137,7 @@ End Sub
 
 设置样式为 "题注"
 
-```
+```text
 Sub setTableNameStyle()
     For Each aTable In ActiveDocument.Tables
         With aTable.Range
@@ -154,7 +154,7 @@ End Sub
 
 设置样式为 "题注"
 
-```
+```text
 Sub setImageNameStyle()
     For Each iShape In ActiveDocument.InlineShapes
         With iShape.Range
@@ -171,7 +171,7 @@ End Sub
 
 ## 批量添加表名题注（表名在表上方）
 
-```
+```text
 Sub setTableName()
     For Each aTable In ActiveDocument.Tables
         With aTable.Range
@@ -193,7 +193,7 @@ End Sub
 
 写文档是经常遇到表格上面一段是表名的 “题注”，再上面一段的结尾是 “如表 x-x”，这里的 “表 x-x” 是” 表的题注的交叉引用 “，下面是一个自动添加这种交叉引用的例子：
 
-```
+```text
 Sub add_cr_of_caption()
     Dim i
     i = 1

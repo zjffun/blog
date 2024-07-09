@@ -56,7 +56,7 @@ tags:
 
 ## 用户授权
 
-```
+```sql
 grant connect,resource,dba to username;
 grant sysdba to username;
 commit;

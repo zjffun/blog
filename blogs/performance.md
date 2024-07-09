@@ -18,7 +18,7 @@ RAIL stands for four distinct aspects of web app life cycle:
 
 The Navigation Timing API provides data that can be used to measure the performance of a web site.
 
-```
+```js
 window.performance.timing
 ```
 

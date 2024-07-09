@@ -296,7 +296,7 @@ fi
 
 eg：忽略根目录下 upload 文件夹，除了 2015 文件夹
 
-```
+```text
 #最前面不加"/"则所有文件夹下的upload都会忽略
 #不加"*"则将upload忽略而不是upload下的文件忽略，后面的!/upload/2015/无法生效
 /upload/*
@@ -307,7 +307,7 @@ eg：忽略根目录下 upload 文件夹，除了 2015 文件夹
 
 eg：忽略 /web/upload/ 下的所有文件和文件夹，除了 /web/upload/img/20170301 / 文件夹
 
-```
+```text
 /web/upload/*
 
 !/web/upload/img/

@@ -57,7 +57,7 @@ border: border-width border-style border-color
 
 ## CSS3 图片边框属性
 
-```
+```text
 border-image:
 <'border-image-source'> ||
 <'border-image-slice'>
@@ -75,7 +75,7 @@ border-image: url("https://mdn.mozillademos.org/files/4127/border.png")
 
 ## CSS3 圆角边框属性
 
-```
+```text
 border-radius: <length-percentage>{1,4} [ / <length-percentage>{1,4} ]?
 ```
 
@@ -104,7 +104,7 @@ box-shadow: none | <shadow>#
 
 例如
 
-```
+```text
 box-shadow: 3px 3px red,   /* 第一个阴影 x，y 偏移 3px 的阴影 */
 	-1em 0 .4em olive;     /* 第二个阴影 x 偏移 -1em，y 偏移 0，模糊半径 0.4em 的阴影*/
 ```
@@ -276,7 +276,7 @@ PS: 现在的标准是`flex-shrink`负值无效，书中的 “`flex-shrink`的�
 
 用来实现类似报纸杂志这样的多列布局。
 
-```
+```text
 column: <'column-width'> || <'column-count'>
 ```
 

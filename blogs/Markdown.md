@@ -7,7 +7,7 @@ date: 'Fri, 04 May 2018 00:55:33 GMT'
 
 ## 标题
 
-```
+```md
 # md
 ## md
 ### md
@@ -18,41 +18,41 @@ date: 'Fri, 04 May 2018 00:55:33 GMT'
 
 ## 粗体和斜体
 
-```
+```md
 *md*    //斜体
 **md**  //粗体
 ```
 
 ## 分割线
 
-```
+```md
 ---
 ***
 ```
 
 ## 分割线
 
-```
+```md
 ---
 ***
 ```
 
 ## 列表
 
-```
+```md
 无序列表：* md  或者 - md  或者 + md
 有序列表：1. md
 ```
 
 ## 引用
 
-```
+```md
 > md
 ```
 
 ## 超链接
 
-```
+```md
 [百度](http://www.baidu.com)
 ```
 
@@ -60,14 +60,14 @@ date: 'Fri, 04 May 2018 00:55:33 GMT'
 
 使用网络或图床图片：
 
-```
+```md
 ![百度](https://www.baidu.com/img/bdlogo.png)
 ```
 
 不使用图床插入图片：\
 将图片转换成 Base64
 
-```
+```md
 ![图片1][img1]
 
 [img1]:data:image/png;base64,iVBORw0KGgoAAAANSUhEU
@@ -77,7 +77,7 @@ date: 'Fri, 04 May 2018 00:55:33 GMT'
 
 冒号在哪边就是哪边对其
 
-```
+```md
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |

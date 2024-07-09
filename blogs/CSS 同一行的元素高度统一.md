@@ -18,7 +18,7 @@ tags:
 
 ## 示例
 
-```
+```html
 <style>
     /*1. 设置外部容器 display: flex;*/
     .container{
@@ -82,7 +82,7 @@ tags:
 
 ## 示例
 
-```
+```html
 <style>
     /*1. 设置外部容器overflow: hidden;*/
     .container{
@@ -148,7 +148,7 @@ tags:
 
 ## 示例
 
-```
+```html
 <style>
     /*1. 设置外部容器 display: table;*/
     .container{

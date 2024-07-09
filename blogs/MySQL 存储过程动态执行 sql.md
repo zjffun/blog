@@ -7,7 +7,7 @@ tags:
 
 # 存储过程动态执行 sql
 
-```
+```sql
 --存储过程名和参数，参数中in表示传入参数，out标示传出参数，inout表示传入传出参数
 
 create procedure p_procedurecode(in sumdate varchar(10))
@@ -62,7 +62,7 @@ end;
 
 # emample
 
-```
+```sql
 drop database if exists wifi_database;
 create database wifi_database default character set utf8;
 use wifi_database;

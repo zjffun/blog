@@ -41,7 +41,7 @@ tags:
 
 方法一：映射表 + 正则替换
 
-```
+```js
 var keys = Object.keys || function(obj) {
     obj = Object(obj)
     var arr = []
@@ -87,7 +87,7 @@ function unescape(str) {
 
 方法二：利用浏览器 DOM API（只能在浏览器跑，只能转换部分字符）
 
-```
+```js
 // 将HTML转义为实体
 function escape(html){
     var elem = document.createElement('div')

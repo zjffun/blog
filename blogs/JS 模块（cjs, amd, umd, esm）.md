@@ -22,7 +22,7 @@ tags:
 
 使用 exports 或 module.exports
 
-```
+```js
 var myModule = (a, b)=>{
     return a+b;
 }
@@ -33,7 +33,7 @@ module.exports = myModule;
 
 使用 require
 
-```
+```js
 var mm = require('./myModul.js');
 ```
 

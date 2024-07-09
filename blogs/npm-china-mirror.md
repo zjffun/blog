@@ -16,6 +16,6 @@ Using [gucong3000/mirror-config-china: Mirrors in China about node.js](https://g
 
 You can set `canvas_binary_host_mirror` to `.npmrc` to change where the binary download:
 
-```
+```text
 canvas_binary_host_mirror=https://registry.npmmirror.com/-/binary/canvas
 ```

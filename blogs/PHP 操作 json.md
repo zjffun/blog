@@ -29,7 +29,7 @@ file_put_contents('./json_string.json', $json_string);
 
 只能大概调整一下，以后再改进吧
 
-```
+```php
 /**
  * 重新调整json缩进
  * @Author   zjf

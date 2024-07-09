@@ -39,7 +39,7 @@ tags:
 
 此时我们可以使用 [bilibili 视频封面图](https://bb-embed.zjffun.com/) 这个工具为图片添加这是一个视频的视觉提示，例如：
 
-```
+```md
 [![](https://bb-embed.zjffun.com/embed?v=BV1jS4y1w7SW)](https://player.bilibili.com/player.html?aid=683633468&bvid=BV1jS4y1w7SW&cid=711074429&page=1)
 ```
 

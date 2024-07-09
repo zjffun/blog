@@ -12,7 +12,7 @@ smartctl -a disk0
 
 2022-06-04
 
-```
+```text
 SMART/Health Information (NVMe Log 0x02)
 Critical Warning:                   0x00
 Temperature:                        34 Celsius
@@ -33,7 +33,7 @@ Error Information Log Entries:      0
 
 2022-05-05
 
-```
+```text
 SMART/Health Information (NVMe Log 0x02)
 Critical Warning:                   0x00
 Temperature:                        29 Celsius

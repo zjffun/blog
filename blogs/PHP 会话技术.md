@@ -60,7 +60,7 @@ HTTPONLY：
 
 `setCookie(KEY, 新 VALUE, 新 [有效期（时间戳表示）], 新 [有效路径], 新 [有效域], 新 [是否仅安全传输], 新 [HTTPONLY])`
 
-```
+```php
 setCookie('is_click', 'false', time()+3600*24*30, '/', '.kongciyuan.com', false, true);
 ```
 
@@ -95,7 +95,7 @@ setCookie('is_click', 'false', time()+3600*24*30, '/', '.kongciyuan.com', false,
 
 完全整删除 Session 全部数据：
 
-```
+```php
 //数据区，$_SESSION全局数组，存sessionid的cookie
 Session_destroy();
 unset($_SESSION);
@@ -136,7 +136,7 @@ session 销毁只将持久化的 Session 清除了，$\_SESSION 变量是不会�
 3.  配置 Session 存储机制为用户自定义（默认是 files）：session.save_handler = user
     示例：
 
-    ```
+    ```php
     <?php
     //配置session存储机制
     ini_set('session.save_handler', 'user');

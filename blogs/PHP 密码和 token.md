@@ -13,7 +13,7 @@ tags:
 `crypt()` 和`hash_equals()`：\
 <http://php.net/manual/zh/function.crypt.php>
 
-```
+```php
 <?php
 // crypt()和hash_equals()
 $pwds = ['123456', '123456', '123456', 'aaa', '_123456789zxcvbnmasdfghjklqwertyuiop'];
@@ -49,7 +49,7 @@ echo "一共 $t 秒";
 `password_hash()` 和`password_verify()`（挺慢的，做安全需求非常高的时候用。。）：\
 <http://php.net/manual/zh/function.password-hash.php>
 
-```
+```php
 <?php
 // password_hash()和password_verify()
 $pwds = ['123456', '123456', '123456', 'aaa', '_123456789zxcvbnmasdfghjklqwertyuiop'];
@@ -85,7 +85,7 @@ echo "一共 $t 秒";
 > <http://php.net/manual/zh/function.random-bytes.php#118932>\
 > I used below function to create random token, and also a salt from the token. I used it in my application to prevent CSRF attack.
 
-```
+```php
 <?php
 function RandomToken($length = 32){
     if(!isset($length) || intval($length) <= 8 ){

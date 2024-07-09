@@ -10,7 +10,7 @@ tags:
 
 ## fsockopen
 
-```
+```php
 <?php
 // 建立连接
 $link = fsockopen('localhost', '80');
@@ -44,7 +44,7 @@ fclose($link);
 
 ### 模拟 GET 请求
 
-```
+```php
 <?php
 // 建立连接
 $curl = curl_init();
@@ -59,7 +59,7 @@ curl_close($curl);
 
 ### POST 请求
 
-```
+```php
 <?php
 // 建立连接
 $curl = curl_init();
@@ -122,7 +122,7 @@ header('Expires:' . gmdate('D, d M Y H:i:s', time()+5) . 'GMT');\
 Expires：有效期（GMT：格林威治时间）\
 `gmdate()` 将时间戳格式化为格林威治平时
 
-```
+```php
 <?php
 header('Expires: ' . gmdate('D, d M Y H:i:s', time()+5) . ' GMT');
 echo time(), "<a href=''>self</a>";
@@ -172,7 +172,7 @@ fclose($handle);
 `Header("Refresh: N（秒数）; URL=URL 地址");`\
 注意：会在当前页面停留 N 秒后跳转到指定 URL 地址
 
-```
+```php
 public function goto($url){
     header("Location:$url");
 }
