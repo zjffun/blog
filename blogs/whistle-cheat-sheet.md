@@ -7,18 +7,18 @@ tags:
 
 Proxy to file:
 
-```text
+```
 https://example.com/foo /foo/test.json
 ```
 
 Proxy to URL:
 
-```text
+```
 https://example.com/foo/ https://example2.com/bar/
 ```
 
 Proxy to value:
 
-```text
+```
 https://example.com/foo/bar.js {foo1}
 ```

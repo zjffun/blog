@@ -122,7 +122,7 @@ sudo /etc/init.d/apache2 restart
 
 [Configure Static IP Address on Linux VM in VMware Player | DoubleCloud => Private Cloud + Public Cloud](http://www.doublecloud.org/2013/03/configure-static-ip-address-on-linux-vm-in-vmware-player/)
 
-```text
+```
 $ sudo vim /etc/network/interfaces
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5)

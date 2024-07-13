@@ -19,7 +19,7 @@ API: [rpc.cnblogs.com/metaweblog/jffun-blog#BlogInfo](about:blank)
 
 例如：
 
-```text
+```
 地址：https://rpc.cnblogs.com/metaweblog/jffun-blog
 方式：POST
 请求主体：

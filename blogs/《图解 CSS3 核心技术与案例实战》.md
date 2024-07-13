@@ -49,7 +49,7 @@ date: "Sat, 02 Mar 2019 17:53:39 GMT"
 
 ## 边框基本属性
 
-```text
+```
 border: border-width border-style border-color
 ```
 
@@ -57,7 +57,7 @@ border: border-width border-style border-color
 
 ## CSS3 图片边框属性
 
-```text
+```
 border-image:
 <'border-image-source'> ||
 <'border-image-slice'>
@@ -75,7 +75,7 @@ border-image: url("https://mdn.mozillademos.org/files/4127/border.png")
 
 ## CSS3 圆角边框属性
 
-```text
+```
 border-radius: <length-percentage>{1,4} [ / <length-percentage>{1,4} ]?
 ```
 
@@ -91,7 +91,7 @@ border-radius: 10px 100px 60px / /* 水平四角半径 10px 100px 60px 100px*/ 1
 
 ## CSS3 盒子阴影属性
 
-```text
+```
 box-shadow: none | <shadow>#
 <shadow> = inset? && <length>{2,4} && <color>?
 ```
@@ -104,7 +104,7 @@ box-shadow: none | <shadow>#
 
 例如
 
-```text
+```
 box-shadow: 3px 3px red,   /* 第一个阴影 x，y 偏移 3px 的阴影 */
 	-1em 0 .4em olive;     /* 第二个阴影 x 偏移 -1em，y 偏移 0，模糊半径 0.4em 的阴影*/
 ```
@@ -119,7 +119,7 @@ border-radius 会对阴影产生影响。
 
 ## 基本属性
 
-```text
+```
 background: background-color background-image background-repeat background-attachment background-position
 ```
 
@@ -149,7 +149,7 @@ CSS 文本功能主要分为三大类：字体（font），颜色（color）和�
 
 语法：
 
-```text
+```
 [ [ <'font-style'> || <font-variant-css21> || <'font-weight'> || <'font-stretch'> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar
 
 where
@@ -266,7 +266,7 @@ W3C 标准盒模型是这样的：
 
 Flexbox 的语法有旧版本、混合版本、新版本三种版本。2012 年 9 月推出了新版本。
 
-```text
+```
 flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
 ```
 
@@ -276,7 +276,7 @@ PS: 现在的标准是`flex-shrink`负值无效，书中的 “`flex-shrink`的�
 
 用来实现类似报纸杂志这样的多列布局。
 
-```text
+```
 column: <'column-width'> || <'column-count'>
 ```
 
@@ -317,7 +317,7 @@ PS: 当设置的列宽足够大，以至于无法分列显示时，就算设置�
 
 `transfrom`属性指一组转换函数。如果这个属性的值不为`none`，则会创建一个层叠上下文。
 
-```text
+```
 transfrom: none | <transform-list>
 ```
 
@@ -349,7 +349,7 @@ transfrom: none | <transform-list>
 
 ## 标准语法
 
-```text
+```
 transition: <single-transition>#
 
 where
@@ -415,7 +415,7 @@ meta 标签还可用于设置字符集等其他元数据。
 
 指定自定义字体名称和字体资源位置等信息。
 
-```text
+```
 @font-face {
   [ font-family: <family-name>; ] ||
   [ src: <src>; ] ||

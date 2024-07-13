@@ -53,7 +53,7 @@ alias cnpmi='npm install --registry=https://registry.npm.taobao.org/'
 
 例如 puppeteer 的进行了如下配置在安装的时候下载 chromium：
 
-```text
+```
 {
   "name": "puppeteer",
   ...
@@ -68,7 +68,7 @@ alias cnpmi='npm install --registry=https://registry.npm.taobao.org/'
 
 ### 常见的附件的下载源
 
-```text
+```
 puppeteer_download_host "https://npm.taobao.org/mirrors"
 sass_binary_site "https://npm.taobao.org/mirrors/node-sass/"
 phantomjs_cdnurl "http://cnpmjs.org/downloads"

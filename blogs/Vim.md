@@ -39,7 +39,7 @@ date: 'Wed, 20 Feb 2019 01:07:19 GMT'
 
 > [Indenting source code | Vim Tips Wiki | FANDOM powered by Wikia](https://vim.fandom.com/wiki/Indenting_source_code)
 
-```text
+```
 :set expandtab
 :set shiftwidth=2
 :set softtabstop=2
@@ -47,7 +47,7 @@ date: 'Wed, 20 Feb 2019 01:07:19 GMT'
 
 # 显示空白字符
 
-```text
+```
 :e ++ff=unix
 :set list
 ```

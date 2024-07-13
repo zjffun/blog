@@ -17,7 +17,7 @@ ls | cat -e
 
 我们用 4 个符号代表我们的输入，每个符号都有值和类型：
 
-```text
+```
 ls -> WORD
 | -> PIPE
 cat -> WORD
@@ -28,7 +28,7 @@ cat -> WORD
 
 解析后我们希望获得下面这种形式：
 
-```text
+```
               pipe_sequence
               /          \
 simple_command      simple_command    
@@ -44,7 +44,7 @@ simple_command      simple_command
 
 `sh`文法的简单的版本：
 
-```text
+```
 pipe_sequence    : simple_command
                  | pipe_sequence '|' simple_command
                  ;

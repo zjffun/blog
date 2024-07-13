@@ -27,7 +27,7 @@ this.$forceUpdate();
 
 并不是什么好方法。
 
-```text
+```
 <span v-if="refreshTag">{{ text }}</span>
 
 this.refreshTag = false;

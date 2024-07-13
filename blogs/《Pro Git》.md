@@ -205,7 +205,7 @@ $ git shortlog --no-merges master --not v1.0.1
 
 例如: `git show HEAD~3^2`表示查看前三次的提交的第二父提交
 
-```text
+```
 zjf@DESKTOP-5JD9B9T MINGW64 ~/Desktop/test/git (master)
 $ git log --pretty=format:'%h %s' --graph
 * 1945ca3 c9 (git show HEAD)
@@ -721,7 +721,7 @@ $ cat .git/refs/remotes/origin/master
 
 查看`.git/config`文件，有下面这样的配置指定了远程的名称 (`origin`), 远程仓库的 URL 地址，和用于获取操作的 Refspec
 
-```text
+```
     [remote "origin"]
         url = git@github.com:schacon/simplegit-progit.git
         fetch = +refs/heads/*:refs/remotes/origin/*
@@ -757,7 +757,7 @@ $ git push origin :topic
 
 一些设置：
 
-```text
+```
 # 只拉取远程的 master 分支，可以把 fetch 这一行修改
 fetch = +refs/heads/master:refs/remotes/origin/master
 

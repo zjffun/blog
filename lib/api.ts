@@ -3,6 +3,7 @@ import matter from "gray-matter";
 import { join } from "path";
 import Doc from "../interfaces/doc";
 import markdownToHtml from "./markdownToHtml";
+import { getTime } from "./utils";
 
 interface getDocProps {
   dir: string;
@@ -79,15 +80,11 @@ export function getDocBySlug(slug: string, fields: string[] = []) {
     }
 
     if (field === "date") {
-      items[field] = new Date(data.date).getTime();
+      items[field] = getTime(data.date);
     }
 
     if (field === "updated") {
-      items[field] = items.date;
-
-      if (data.updated) {
-        items[field] = new Date(data.updated).getTime();
-      }
+      items[field] = getTime(data.updated) || getTime(data.date);
     }
 
     if (field === "tags") {

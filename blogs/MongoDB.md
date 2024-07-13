@@ -23,7 +23,7 @@ sudo apt-get install -y mongodb-org
 mongosh mongodb://xxx
 ```
 
-```mongosh
+```
 # get help
 help
 
@@ -59,7 +59,7 @@ mongorestore --uri "mongodb://xxx" ./
 mongosh
 ```
 
-```mongodb
+```
 use admin
 db.createUser(
   {
@@ -81,7 +81,7 @@ sudo vim /etc/mongod.conf
 
 [IP Binding](https://www.mongodb.com/docs/manual/core/security-mongodb-configuration/#ip-binding)
 
-```text
+```
 net:
   port: 27017
   bindIp: 0.0.0.0
@@ -98,7 +98,7 @@ mongosh --port 27017 --authenticationDatabase "admin" -u "myUserAdmin" -p
 
 # [Create user](https://www.mongodb.com/docs/manual/tutorial/create-users/#create-additional-users-for-your-deployment)
 
-```mongodb
+```
 use test
 db.createUser(
   {

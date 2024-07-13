@@ -11,7 +11,7 @@ date: 'Thu, 04 Jul 2019 10:18:02 GMT'
 
 -   全局的 Git 配置（`~/.gitconfig`）
 
-```text
+```
 [user]
 	name = zjf
 	email = zjffun@gmail.com
@@ -22,7 +22,7 @@ date: 'Thu, 04 Jul 2019 10:18:02 GMT'
 
 -   公司的 Git 配置 (`~/Desktop/corp/.gitconfig`)
 
-```text
+```
 [user]
 	name = zhangjufeng
 	email = jufeng.zhang@corporation.com

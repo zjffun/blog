@@ -15,7 +15,7 @@ Important for front end: 101, 200, 301, 304, 400, 404, 500
 
 切换 WebSocket 时，响应状态码，eg：
 
-```text
+```
 "request": {
   "bodySize": 0,
   "method": "GET",

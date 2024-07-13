@@ -14,7 +14,7 @@ tags:
 
 未设置 position（使用默认值 static）不会创建层叠上下文。如下面例子，DIV #3 还是会在 DIV #1 上面。
 
-```text
+```
 Root
 - DIV #1(position: relative, z-index: 5)
 - DIV #2(z-index: 4)
