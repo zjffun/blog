@@ -125,6 +125,14 @@ Technical:
 
 # Business Projects
 
+## Table performance optimization
+
+Lazy load components.
+
+## DnD config page
+
+Drag and drop config buttons, datum and table columns.
+
 ## AI Correction
 
 TensorFlow:
