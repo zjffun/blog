@@ -179,6 +179,9 @@ XX 是服务于 XX 的系统。我负责开发 XX 功能。我使用 XX 进行�
 Q: CSS make a box with fixed width-to-height ratio\
 A: [aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)
 
+Q: CSS implement 2 column layout, like newspaper\
+A: Using [columns](https://developer.mozilla.org/en-US/docs/Web/CSS/columns) property
+
 Q: Different between process and thread\
 A: 进程（Process）：给程序独立使用 CPU、主存、I/O 设备的假象。任何时刻操作系统只有一个进程在运行，进程会交错执行（并发运行）。线程（Thread）：一个进程可以包含多个线程。
 
