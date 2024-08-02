@@ -8,7 +8,8 @@ import remarkParse from "remark-parse";
 import { Root } from "remark-parse/lib";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
-import { Node } from "unist";
+
+import type { Node } from "unist";
 
 export default async function markdownToHtml(markdown: string) {
   const result = await unified()
