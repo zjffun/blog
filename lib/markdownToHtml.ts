@@ -9,8 +9,6 @@ import { Root } from "remark-parse/lib";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 
-import type { Node } from "unist";
-
 export default async function markdownToHtml(markdown: string) {
   const result = await unified()
     .use(remarkParse)
@@ -32,7 +30,7 @@ export default async function markdownToHtml(markdown: string) {
           properties: {
             className: "Layout-main",
           },
-          children: [] as Node[],
+          children: [],
         };
 
         for (let i = 1; i < tree.children.length; i++) {
