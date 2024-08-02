@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "node ./tools/dead-links-checker.mjs",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -22,6 +22,7 @@
     "gray-matter": "^4.0.3",
     "relation2-cli": "^0.0.14",
     "sass": "^1.77.8",
+    "sharp": "^0.33.4",
     "tailwindcss": "^3.2.4",
     "typescript": "4.9.4"
   },
@@ -42,7 +43,6 @@
     "remark-gfm": "^4.0.0",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.0",
-    "sharp": "^0.33.4",
     "unified": "^11.0.4"
   }
 }
