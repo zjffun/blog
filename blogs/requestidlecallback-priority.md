@@ -1,5 +1,5 @@
 ---
-title: `requestIdleCallback` Priority
+title: requestIdleCallback Priority
 date: 2024-07-29 03:21:05 +08:00
 tags:
   - js

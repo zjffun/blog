@@ -1,7 +1,9 @@
 ---
-title: 工作面试
+title: Job Interview
 date: "Fri, 27 May 2022 08:55:13 GMT"
 updated: 2024-06-30 21:16:09 +08:00
+tags:
+  - interview
 ---
 
 # 流程
@@ -22,14 +24,14 @@ XX 是服务于 XX 的系统。我负责开发 XX 功能。我使用 XX 进行�
 
 可能的问题：
 
+- 讲一讲你认为最有挑战的项目？（“最”和“有挑战”容易让人多想和纠结，它们是形容词可以当做不存在，理解为“请随便讲一个项目”，不用多想讲出准备最充分的项目就好。）
 - 项目遇到的最大问题？如何解决？
 - 和其他成员有什么冲突？如何解决？
 - 为什么跳槽？
 
 ## 技术面试
 
-- 数据结构和算法
-- 专业技能：例如 JS，React
+### 数据结构和算法
 
 要点：
 
@@ -44,6 +46,14 @@ XX 是服务于 XX 的系统。我负责开发 XX 功能。我使用 XX 进行�
 1.  画图：抽象问题形象化；
 2.  举例：抽象问题具体化；
 3.  分解：复杂问题简单化。
+
+### 专业技能
+
+平时工作用到的技术。例如：微前端、Vue、React 等。工作几年后 HTML、CSS、JS 等基础问得就少了。
+
+### 系统设计
+
+算法和专业技能已经卷到头了，无法做区分了。现在系统设计问的会比较多（从一面开始）。比如：如何设计一个 XX 功能/系统。
 
 ## 应聘者提问
 
@@ -183,10 +193,19 @@ Q: CSS implement 2 column layout, like newspaper\
 A: Using [columns](https://developer.mozilla.org/en-US/docs/Web/CSS/columns) property
 
 Q: Different between process and thread\
-A: 进程（Process）：给程序独立使用 CPU、主存、I/O 设备的假象。任何时刻操作系统只有一个进程在运行，进程会交错执行（并发运行）。线程（Thread）：一个进程可以包含多个线程。
+A:
+
+- 进程（Process）：给程序独立使用 CPU、主存、I/O 设备的假象。任何时刻操作系统只有一个进程在运行，进程会交错执行（并发运行）。
+- 线程（Thread）：一个进程可以包含多个线程。
 
 Q: Garbage collection\
 A: Using mark-and-sweep algorithm. This algorithm reduces the definition of "an object is no longer needed" to "an object is unreachable". No modern JavaScript engine uses reference-counting for garbage collection anymore. [Memory management - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_management)
+
+Q: 设计一个组件\
+A:
+
+1. 每一个属性单独使用一个 props，避免复杂的对象。使组件的 API 更加直观。\
+2. 验证组件的 props，保证组件的 props 能应对不同的情况，即使其他开发者并未按照你预想的方法使用时也不会出错。
 
 # 参考资料
 

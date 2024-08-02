@@ -12,6 +12,12 @@ tags:
 - 价值原则
 - 发展原则
 
+# Strength
+
+- 执行能力
+- 学习能力
+- 沟通正在练习
+
 # Skill
 
 ## Testing
@@ -145,3 +151,9 @@ TensorFlow:
    4. Optimizers
 3. Validate the model
 4. Use the model
+
+# other
+
+- CRM (Customer Relationship Management) 客户关系管理：帮助企业有效录入、留存和追踪客户信息。
+- BI (Business Intelligence) 商业智能：很多图表辅助决策。即席查询（Ad Hoc）：输入查询条件，查询结果会在图表上展示。
+- BPM (Business Process Management) 业务流程管理：拖拽配置审批、报销、请假等业务流程。
