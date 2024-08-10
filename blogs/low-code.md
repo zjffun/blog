@@ -1,17 +1,23 @@
 ---
-date: 'Mon, 02 May 2022 10:49:22 GMT'
-updated: 'Sat, 28 May 2022 09:08:54 GMT'
+title: Low-Code
+date: "Mon, 02 May 2022 10:49:22 GMT"
+updated: "Sat, 28 May 2022 09:08:54 GMT"
 tags:
   - 前端
 ---
 
+# My idea
+
+- Click a component in the web page open it in VSCode, then using VSCode extension edit component.
+- Using chrome extension edit a component in the web page.
+
 # Project
 
--   [alibaba/designable: 🧩 Make everything designable 🧩](https://github.com/alibaba/designable)
+- [alibaba/designable: 🧩 Make everything designable 🧩](https://github.com/alibaba/designable)
 
--   [alibaba/lowcode-engine: An enterprise-class low-code technology stack with scale-out design / 一套面向扩展设计的企业级低代码技术体系](https://github.com/alibaba/lowcode-engine)
+- [alibaba/lowcode-engine: An enterprise-class low-code technology stack with scale-out design / 一套面向扩展设计的企业级低代码技术体系](https://github.com/alibaba/lowcode-engine)
 
--   [baidu/amis: 前端低代码框架，通过 JSON 配置就能生成各种页面。](https://github.com/baidu/amis)
+- [baidu/amis: 前端低代码框架，通过 JSON 配置就能生成各种页面。](https://github.com/baidu/amis)
 
 # Article
 

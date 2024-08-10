@@ -186,6 +186,12 @@ XX 是服务于 XX 的系统。我负责开发 XX 功能。我使用 XX 进行�
 
 # Interview Skills
 
+Q: 职业规划？规划？\
+A: 短期规划、中期规划、长期规划
+
+Q: 是否稳定？\
+A: 相当长一段时间会稳定。因为职业规划等。
+
 Q: 依你现在的水平，恐怕能找到比我们公司更好的单位吧？\
 A: 可以先用“不可一概而论”作为开头，接着从正反两方面来解释你的观点。\
 例：这是一个比较主观的问题。1 XX 公司在我心理排名高，2 符合职业规划，3 能力更高，更能为公司带来更多价值，做事更得心应手。高专业水平弥补不擅长面试的短板。
@@ -221,6 +227,25 @@ A:
 
 1. 每一个属性单独使用一个 props，避免复杂的对象。使组件的 API 更加直观。\
 2. 验证组件的 props，保证组件的 props 能应对不同的情况，即使其他开发者并未按照你预想的方法使用时也不会出错。
+
+Q: 设计模式\
+A: [23 种设计模式详解（全 23 种） - 知乎](https://zhuanlan.zhihu.com/p/575645658)
+
+- 创建型模式，共五种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。
+- 结构型模式，共七种：适配器模式、装饰器模式、代理模式、外观模式、桥接模式、组合模式、享元模式。
+- 行为型模式，共十一种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。
+
+Q: TS Class private and protected\
+A: [Member Visibility - Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html#member-visibility)
+
+Q: Front-end system design\
+A:
+
+- Scope: browser, user, SEO, performance
+- Infrastructure: CI/CD, git, gray release
+- Specification: naming, coding, commit message
+- Libraries: React, Vue.js, Angular, SSG/SSR, router, request, UI, testing, monitor
+- Folders: pages, services, utils, components
 
 # 参考资料
 
