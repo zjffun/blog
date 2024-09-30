@@ -6,6 +6,8 @@ tags:
   - VS Code
 ---
 
+Collection: [vscode-zjffun - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=zjffun.vscode-zjffun)
+
 # Jump to CSS/SCSS/LESS definition
 
 [CSS Navigation - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=pucelle.vscode-css-navigation)
