@@ -77,9 +77,9 @@ react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV(
 
 Implement: `packages/react/src/jsx/ReactJSXElement.js`
 
-Doc: [RFC: createElement changes and surrounding deprecations by sebmarkbage · Pull Request #107 · reactjs/rfcs](https://github.com/reactjs/rfcs/pull/107/files)
+Doc: [RFC: createElement changes and surrounding deprecations by sebmarkbage · Pull Request #107 · reactjs/rfcs](https://github.com/reactjs/rfcs/pull/107)
 
-PS: `source` will not be carried from `jsxDEV() -> ReactElement() -> element`, and `debugStack` will be carried now.
+PS: `source` will not be carried from `jsxDEV() -> ReactElement() -> element`, and `debugStack` will be carried now. [Remove \_\_self and \_\_source location from elements by sebmarkbage · Pull Request #28265 · facebook/react](https://github.com/facebook/react/pull/28265)
 
 ## Components Tree
 
