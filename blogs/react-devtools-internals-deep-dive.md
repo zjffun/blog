@@ -90,3 +90,5 @@ PS: `source` will not be carried from `jsxDEV() -> ReactElement() -> element`, a
 <!-- `packages/react-devtools-shared/src/devtools/store.js` store the tree data. -->
 
 `packages/react-devtools-shared/src/devtools/views/Components/InspectedElement.js` side bar show the detail of the selected item.
+
+`packages/react-devtools-shared/src/backend/fiber/renderer.js` filter componenets through `updateComponentFilters(componentFilters) -> mountFiberRecursively() -> shouldFilterFiber()`
