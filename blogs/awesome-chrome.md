@@ -29,6 +29,10 @@ To customize and enhance the functionality of your favorite web pages.
 - [Download HTML](https://gist.github.com/zjffun/fda5d97267c22bf179f1790d264ba12f)
 - [F8 to debug](https://gist.github.com/zjffun/e94ef9512ca971bd8292e5ce5ec8e79b)
 
+## Modify HTTP Headers
+
+- [ModHeader - Modify HTTP headers - Chrome Web Store](https://chromewebstore.google.com/detail/modheader-modify-http-hea/idgpnmonknjnojddfkpgkljpfnnfcklj)
+
 ## Translate
 
 - [沉浸式翻译 - 双语对照网页翻译插件](https://immersivetranslate.com/)

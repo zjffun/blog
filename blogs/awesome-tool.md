@@ -5,6 +5,11 @@ tags:
   - 工具
 ---
 
+# Copy & Paste
+
+- [Pure Paste — Sindre Sorhus](https://sindresorhus.com/pure-paste)
+- [uTools 官网 - 新一代效率工具平台](https://u.tools/)
+
 # 7z
 
 macOS Install:
