@@ -5,6 +5,10 @@ tags:
   - 工具
 ---
 
+# Case Converter
+
+- [Title Case Converter – A Smart Title Capitalization Tool](https://titlecaseconverter.com/)
+
 # Copy & Paste
 
 - [Pure Paste — Sindre Sorhus](https://sindresorhus.com/pure-paste)
@@ -25,6 +29,10 @@ Unzip:
 ```
 
 # Image
+
+## Crop and Resize
+
+[Resize and crop photos, images and pictures online](https://www.photoresizer.com/)
 
 ## ImageMagick
 
