@@ -34,6 +34,18 @@ Unzip:
 
 [Resize and crop photos, images and pictures online](https://www.photoresizer.com/)
 
+## Change Background Color
+
+[Change Colors in a PNG – Online PNG Maker](https://onlinepngtools.com/change-png-color)
+
+## Convert
+
+[Squoosh](https://squoosh.app/)
+
+## [TinyPNG](https://tinypng.com/)
+
+Compress WebP, PNG and JPEG images intelligently
+
 ## ImageMagick
 
 Batch convert `jpg` to `webp`:
@@ -41,10 +53,6 @@ Batch convert `jpg` to `webp`:
 ```bash
 magick mogrify -format webp *.jpg
 ```
-
-## [TinyPNG](https://tinypng.com/)
-
-Compress WebP, PNG and JPEG images intelligently
 
 ## SVG online editor
 
