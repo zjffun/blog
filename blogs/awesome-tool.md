@@ -5,6 +5,11 @@ tags:
   - 工具
 ---
 
+# Proxy
+
+- [whistle](https://wproxy.org/whistle/): easy to write rules
+- [Proxyman · Debug, intercept & mock HTTP with Proxyman](https://proxyman.com/): easy to search request and response
+
 # Case Converter
 
 - [Title Case Converter – A Smart Title Capitalization Tool](https://titlecaseconverter.com/)
