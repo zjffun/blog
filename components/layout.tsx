@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google'
 import Footer from "./footer";
 import Meta from "./meta";
 
@@ -10,6 +11,7 @@ const Layout = ({ children }: Props) => {
     <>
       <Meta />
       {children}
+      <GoogleAnalytics gaId="G-MFNS9LFWL9" />
       <Footer />
     </>
   );

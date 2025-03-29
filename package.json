@@ -5,7 +5,7 @@
   "author": "Jufeng Zhang <zjffun@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 127.0.0.1 -p 3000",
     "prebuild": "node ./tools/dead-links-checker.mjs",
     "build": "next build",
     "start": "next start",
@@ -30,6 +30,7 @@
     "@docsearch/react": "3",
     "@jsdevtools/rehype-toc": "^3.0.2",
     "@microflash/rehype-starry-night": "^2.1.0",
+    "@next/third-parties": "^15.2.4",
     "@wooorm/starry-night": "^1.5.0",
     "classnames": "^2.3.2",
     "date-fns": "^2.29.3",
