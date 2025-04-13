@@ -92,3 +92,8 @@ PS: `source` will not be carried from `jsxDEV() -> ReactElement() -> element`, a
 `packages/react-devtools-shared/src/devtools/views/Components/InspectedElement.js` side bar show the detail of the selected item.
 
 `packages/react-devtools-shared/src/backend/fiber/renderer.js` filter componenets through `updateComponentFilters(componentFilters) -> mountFiberRecursively() -> shouldFilterFiber()`
+
+# See also
+
+- [React Advanced 2023 - Building Better React DevTools with Replay Time Travel · Mark's Dev Blog](https://blog.isquaredsoftware.com/2023/10/presentations-react-devtools-replay/)
+- [How We Rebuilt React DevTools with Replay Routines](https://blog.replay.io/how-we-rebuilt-react-devtools-with-replay-routines)
