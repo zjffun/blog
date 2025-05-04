@@ -108,3 +108,9 @@ db.createUser(
   }
 )
 ```
+
+# [macOS](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x-tarball/)
+
+```sh
+mongod --dbpath ~/data/db --logpath ~/data/log/mongodb/mongo.log --fork
+```

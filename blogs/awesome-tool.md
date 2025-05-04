@@ -8,6 +8,7 @@ tags:
 # Proxy
 
 - [whistle](https://wproxy.org/whistle/): easy to write rules
+  - [vConsole / eruda plugins](./whistle-vconsole-eruda)
 - [Proxyman · Debug, intercept & mock HTTP with Proxyman](https://proxyman.com/): easy to search request and response
 
 # Case Converter

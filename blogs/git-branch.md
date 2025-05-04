@@ -5,7 +5,7 @@ tags:
   - Git
 ---
 
-## Git list branchs ordered by most recent commit
+# Git list branchs ordered by most recent commit
 
 Command:
 
@@ -22,3 +22,12 @@ git config --global alias.recentbranch 'branch -av --sort=-committerdate'
 See:
 
 - [version control - How can I get a list of Git branches, ordered by most recent commit? - Stack Overflow](https://stackoverflow.com/questions/5188320/how-can-i-get-a-list-of-git-branches-ordered-by-most-recent-commit)
+
+# Delete remote deleted branches
+
+```sh
+# git remote prune origin --dry-run
+git remote prune origin
+# or
+git fetch --prune
+```
