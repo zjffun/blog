@@ -24,6 +24,12 @@ I have no answers to these puzzles now. If you have any idea, please let me know
 
 <iframe width="100%" height="120px" style="border: 1px solid gray" src="/blogs/demo/front-end-puzzles/inline-block-flex-height.html"></iframe>
 
+Maybe related:
+
+> [strut: Visual formatting model details](https://www.w3.org/TR/CSS2/visudet.html#strut)
+>
+> On a block container element whose content is composed of inline-level elements, 'line-height' specifies the minimal height of line boxes within the element. The minimum height consists of a minimum height above the baseline and a minimum depth below it, exactly as if each line box starts with a zero-width inline box with the element's font and line height properties. We call that imaginary box a "strut." (The name is inspired by TeX.).
+
 # Why does td2 overlap with td3?
 
 ```html
