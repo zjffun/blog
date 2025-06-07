@@ -28,3 +28,9 @@ Currently:
 # Build simple tools quickly
 
 [Power Tools - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=egomobile.vscode-powertools)
+
+# Built-in
+
+## Extension Bisect
+
+Extension Bisect will use binary search to find an extension that causes a problem.
