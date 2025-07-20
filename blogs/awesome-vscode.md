@@ -8,6 +8,10 @@ tags:
 
 Collection: [vscode-zjffun - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=zjffun.vscode-zjffun)
 
+# Paste as Markdown
+
+[Markdown Paste - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=telesoho.vscode-markdown-paste-image)
+
 # Jump to CSS/SCSS/LESS definition
 
 [CSS Navigation - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=pucelle.vscode-css-navigation)
